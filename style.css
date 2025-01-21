@@ -12,10 +12,121 @@
   font-style: normal;
 }
 body{
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
-  border: 2px solid tomato;
 }
 
 /* shared styles */
+.display-flex{
+  display: flex;
+}
+
+
+
+
+/* navbar styles */
+header{
+  background-color: rgb(247, 247, 247);
+}
+.nav-banner-section{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+/* navbar logo styles */
+.logo{
+  align-items: center;
+}
+.logo img{
+  width: 4rem;
+  height: 4rem;
+}
+.logo p{
+  font-size: 2rem;
+  font-weight: 700;
+}
+/* navbar menu bar styles */
+.menu-item{
+  list-style: none;
+  margin-right: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.menu-item a{
+  text-decoration: none;
+}
+#home{
+  color: rgb(254, 163, 1);
+}
+#about{
+  color: rgb(1, 172, 253);
+}
+#facilities{
+  color: rgb(5, 212, 223);
+}
+#admission{
+  color: rgb(93, 88, 239);
+}
+.menu-item a:hover{
+  text-decoration: underline;
+}
+.menu-icon{
+  display: inline;
+  display: none;
+}
+/* navbar button styles */
+.contact-btn button{
+  border: none;
+  background-color: orange;
+  padding: 15px 25px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.contact-btn button:hover{
+  background-color: rgb(245, 31, 124);
+  cursor: pointer;
+  color: black;
+  transition: background-color 1.5s , color 2s;
+}
+
+/* banner styles */
+.banner-container{
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-content{
+  width: 640px;
+}
+.banner-content .banner-title{
+  font-size: 3.5rem;
+  margin-bottom: 6px;
+}
+#part1{
+  color: rgb(254, 163, 1);
+}
+#part2{
+  color: rgb(1, 172, 253);
+}
+.banner-content .banner-des{
+  color: rgba(0, 0, 0, 0.67);
+  margin-bottom: 15px;
+}
+.banner-content .banner-btn{
+  border: none;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.banner-image img{
+  width: 468px;
+  height: 575px;
+}
