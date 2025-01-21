@@ -80,6 +80,8 @@ header{
 }
 .menu-icon{
   display: inline;
+  font-size: 2rem;
+  padding-right: 10px;
   display: none;
 }
 /* navbar button styles */
@@ -210,6 +212,24 @@ header{
   border: 2px solid rgb(242, 232, 255);
   background: linear-gradient(180deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
 }
+.arrow-icon {
+  display: flex; 
+  gap: 20px; 
+  margin-top: 20px;
+}
+.arrow-icon i {
+  background-color: orange;
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  color: white;
+  font-size: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 
 @media screen and (max-width: 576px){
@@ -254,6 +274,9 @@ header{
   .curriculum-card{
     width: 80%;
     margin: 0 auto;
+  }
+  .arrow-icon{
+    display: none;
   }
   
 }
