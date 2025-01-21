@@ -11,12 +11,16 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+/* Global Reset */
 body{
   margin: 0;
+}
+*{
   box-sizing: border-box;
 }
 
 /* shared styles */
+
 .display-flex{
   display: flex;
 }
@@ -27,6 +31,7 @@ body{
 /* navbar styles */
 header{
   background-color: rgb(247, 247, 247);
+  padding-bottom: 10px;
 }
 .nav-banner-section{
   max-width: 1200px;
@@ -129,4 +134,126 @@ header{
 .banner-image img{
   width: 468px;
   height: 575px;
+}
+
+/* standard curriculum styles*/
+.curriculum{
+  background-color: rgb(247, 247, 247);
+}
+.curriculum-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(assets/bg.png);
+  background-size: contain;
+  background-position: top;
+  padding-top: 50px;
+}
+.curriculum-title{
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+}
+.curriculum-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+.curriculum-card{
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 20px;
+}
+.curriculum-card-title{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.curriculum-card-des{
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.curriculum-card button{
+  border: none;
+  font-size: 15px;
+  background-color: white;
+  font-weight: 600;
+}
+#curriculum-btn1{
+  color: rgb(100, 200, 255);
+}
+#curriculum-btn2{
+  color: rgb(240, 170, 0);
+}
+#curriculum-btn3{
+  color: rgb(135, 0, 255);
+}
+.curriculum-card img{
+  width: 120px;
+}
+.curriculum-card-1{
+  border: 2px solid rgb(222, 245, 255);
+  background: linear-gradient(180deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.curriculum-card-2{
+  border: 2px solid rgb(255, 244, 220);
+  background: linear-gradient(180deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.curriculum-card-3{
+  border: 2px solid rgb(242, 232, 255);
+  background: linear-gradient(180deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width: 576px){
+  .nav-banner-section{
+    width: 100%;
+  }
+  .logo p{
+    display: none;
+  }
+  .menu-bar , .contact-btn{
+    display: none;
+  }
+  .menu-icon{
+    display: block;
+  }
+  
+  .banner-container{
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+  }
+  .banner-image img{
+    width: 100%;
+  }
+  .banner-content{
+    width: 100%;
+  }
+  .banner-content .banner-title{
+    font-size: 1.5rem;
+  }
+  .banner-content p{
+    font-size: 0.5rem;
+  }
+
+
+  .curriculum-cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .curriculum-card{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
 }
